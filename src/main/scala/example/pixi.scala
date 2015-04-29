@@ -1,7 +1,7 @@
 import scala.scalajs.js
+import org.scalajs.dom.raw._
 import js.annotation._
-
-package importedjs {
+import scala.scalajs.js.typedarray.ArrayBuffer
 
 package PIXI {
 
@@ -176,14 +176,14 @@ class AssetLoader protected () extends Mixin {
   var assetURLs: js.Array[String] = js.native
   var crossorigin: Boolean = js.native
   var loadersByType: js.Any = js.native
-  def listeners(eventName: String): js.Array[js.Function] = js.native
-  def emit(eventName: String, data: js.Any = ???): Boolean = js.native
-  def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
-  def on(eventName: String, fn: js.Function): js.Function = js.native
-  def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
-  def once(eventName: String, fn: js.Function): js.Function = js.native
-  def off(eventName: String, fn: js.Function): js.Function = js.native
-  def removeAllEventListeners(eventName: String): Unit = js.native
+  // def listeners(eventName: String): js.Array[js.Function] = js.native
+  // def emit(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def on(eventName: String, fn: js.Function): js.Function = js.native
+  // def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
+  // def once(eventName: String, fn: js.Function): js.Function = js.native
+  // def off(eventName: String, fn: js.Function): js.Function = js.native
+  // def removeAllEventListeners(eventName: String): Unit = js.native
   def load(): Unit = js.native
 }
 
@@ -194,14 +194,14 @@ class AtlasLoader protected () extends Mixin {
   var baseUrl: String = js.native
   var crossorigin: Boolean = js.native
   var loaded: Boolean = js.native
-  def listeners(eventName: String): js.Array[js.Function] = js.native
-  def emit(eventName: String, data: js.Any = ???): Boolean = js.native
-  def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
-  def on(eventName: String, fn: js.Function): js.Function = js.native
-  def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
-  def once(eventName: String, fn: js.Function): js.Function = js.native
-  def off(eventName: String, fn: js.Function): js.Function = js.native
-  def removeAllEventListeners(eventName: String): Unit = js.native
+  // def listeners(eventName: String): js.Array[js.Function] = js.native
+  // def emit(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def on(eventName: String, fn: js.Function): js.Function = js.native
+  // def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
+  // def once(eventName: String, fn: js.Function): js.Function = js.native
+  // def off(eventName: String, fn: js.Function): js.Function = js.native
+  // def removeAllEventListeners(eventName: String): Unit = js.native
   def load(): Unit = js.native
 }
 
@@ -216,14 +216,14 @@ class BaseTexture protected () extends Mixin {
   var scaleMode: scaleModes = js.native
   var source: HTMLImageElement = js.native
   var width: Double = js.native
-  def listeners(eventName: String): js.Array[js.Function] = js.native
-  def emit(eventName: String, data: js.Any = ???): Boolean = js.native
-  def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
-  def on(eventName: String, fn: js.Function): js.Function = js.native
-  def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
-  def once(eventName: String, fn: js.Function): js.Function = js.native
-  def off(eventName: String, fn: js.Function): js.Function = js.native
-  def removeAllEventListeners(eventName: String): Unit = js.native
+  // def listeners(eventName: String): js.Array[js.Function] = js.native
+  // def emit(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def on(eventName: String, fn: js.Function): js.Function = js.native
+  // def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
+  // def once(eventName: String, fn: js.Function): js.Function = js.native
+  // def off(eventName: String, fn: js.Function): js.Function = js.native
+  // def removeAllEventListeners(eventName: String): Unit = js.native
   def destroy(): Unit = js.native
   def dirty(): Unit = js.native
   def updateSourceImage(newSrc: String): Unit = js.native
@@ -243,14 +243,14 @@ class BitmapFontLoader protected () extends Mixin {
   var crossorigin: Boolean = js.native
   var texture: Texture = js.native
   var url: String = js.native
-  def listeners(eventName: String): js.Array[js.Function] = js.native
-  def emit(eventName: String, data: js.Any = ???): Boolean = js.native
-  def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
-  def on(eventName: String, fn: js.Function): js.Function = js.native
-  def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
-  def once(eventName: String, fn: js.Function): js.Function = js.native
-  def off(eventName: String, fn: js.Function): js.Function = js.native
-  def removeAllEventListeners(eventName: String): Unit = js.native
+  // def listeners(eventName: String): js.Array[js.Function] = js.native
+  // def emit(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def on(eventName: String, fn: js.Function): js.Function = js.native
+  // def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
+  // def once(eventName: String, fn: js.Function): js.Function = js.native
+  // def off(eventName: String, fn: js.Function): js.Function = js.native
+  // def removeAllEventListeners(eventName: String): Unit = js.native
   def load(): Unit = js.native
 }
 
@@ -311,22 +311,22 @@ class CanvasMaskManager extends js.Object {
 @JSName("PIXI.CanvasRenderer")
 class CanvasRenderer protected () extends PixiRenderer {
   def this(width: Double = ???, height: Double = ???, options: PixiRendererOptions = ???) = this()
-  var autoResize: Boolean = js.native
-  var clearBeforeRender: Boolean = js.native
+  // var autoResize: Boolean = js.native
+  // var clearBeforeRender: Boolean = js.native
   var context: CanvasRenderingContext2D = js.native
   var count: Double = js.native
-  var height: Double = js.native
+  // var height: Double = js.native
   var maskManager: CanvasMaskManager = js.native
   var refresh: Boolean = js.native
   var renderSession: RenderSession = js.native
-  var resolution: Double = js.native
-  var transparent: Boolean = js.native
-  var `type`: Double = js.native
-  var view: HTMLCanvasElement = js.native
-  var width: Double = js.native
-  def destroy(removeView: Boolean = ???): Unit = js.native
-  def render(stage: Stage): Unit = js.native
-  def resize(width: Double, height: Double): Unit = js.native
+  // var resolution: Double = js.native
+  // var transparent: Boolean = js.native
+  // var `type`: Double = js.native
+  // var view: HTMLCanvasElement = js.native
+  // var width: Double = js.native
+  // def destroy(removeView: Boolean = ???): Unit = js.native
+  // def render(stage: Stage): Unit = js.native
+  // def resize(width: Double, height: Double): Unit = js.native
 }
 
 @JSName("PIXI.CanvasTinter")
@@ -352,7 +352,7 @@ class Circle protected () extends HitArea {
   var x: Double = js.native
   var y: Double = js.native
   var radius: Double = js.native
-  def clone(): Circle = js.native
+  override def clone(): Circle = js.native
   def contains(x: Double, y: Double): Boolean = js.native
   def getBounds(): Rectangle = js.native
 }
@@ -469,7 +469,7 @@ class Ellipse protected () extends HitArea {
   var y: Double = js.native
   var width: Double = js.native
   var height: Double = js.native
-  def clone(): Ellipse = js.native
+  override def clone(): Ellipse = js.native
   def contains(x: Double, y: Double): Boolean = js.native
   def getBounds(): Rectangle = js.native
 }
@@ -569,14 +569,14 @@ class GrayFilter extends AbstractFilter {
 class ImageLoader protected () extends Mixin {
   def this(url: String, crossorigin: Boolean = ???) = this()
   var texture: Texture = js.native
-  def listeners(eventName: String): js.Array[js.Function] = js.native
-  def emit(eventName: String, data: js.Any = ???): Boolean = js.native
-  def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
-  def on(eventName: String, fn: js.Function): js.Function = js.native
-  def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
-  def once(eventName: String, fn: js.Function): js.Function = js.native
-  def off(eventName: String, fn: js.Function): js.Function = js.native
-  def removeAllEventListeners(eventName: String): Unit = js.native
+  // def listeners(eventName: String): js.Array[js.Function] = js.native
+  // def emit(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def on(eventName: String, fn: js.Function): js.Function = js.native
+  // def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
+  // def once(eventName: String, fn: js.Function): js.Function = js.native
+  // def off(eventName: String, fn: js.Function): js.Function = js.native
+  // def removeAllEventListeners(eventName: String): Unit = js.native
   def load(): Unit = js.native
   def loadFramedSpriteSheet(frameWidth: Double, frameHeight: Double, textureName: String): Unit = js.native
 }
@@ -622,14 +622,14 @@ class JsonLoader protected () extends Mixin {
   var crossorigin: Boolean = js.native
   var loaded: Boolean = js.native
   var url: String = js.native
-  def listeners(eventName: String): js.Array[js.Function] = js.native
-  def emit(eventName: String, data: js.Any = ???): Boolean = js.native
-  def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
-  def on(eventName: String, fn: js.Function): js.Function = js.native
-  def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
-  def once(eventName: String, fn: js.Function): js.Function = js.native
-  def off(eventName: String, fn: js.Function): js.Function = js.native
-  def removeAllEventListeners(eventName: String): Unit = js.native
+  // def listeners(eventName: String): js.Array[js.Function] = js.native
+  // def emit(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def on(eventName: String, fn: js.Function): js.Function = js.native
+  // def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
+  // def once(eventName: String, fn: js.Function): js.Function = js.native
+  // def off(eventName: String, fn: js.Function): js.Function = js.native
+  // def removeAllEventListeners(eventName: String): Unit = js.native
   def load(): Unit = js.native
 }
 
@@ -769,12 +769,12 @@ class ComplexPrimitiveShader protected () extends IPixiShader {
 @JSName("PIXI.StripShader")
 class StripShader protected () extends IPixiShader {
   def this(gl: WebGLRenderingContext) = this()
-  var fragmentSrc: js.Array[String] = js.native
-  var gl: WebGLRenderingContext = js.native
-  var program: WebGLProgram = js.native
-  var vertexSrc: js.Array[String] = js.native
-  def destroy(): Unit = js.native
-  def init(): Unit = js.native
+  // var fragmentSrc: js.Array[String] = js.native
+  // var gl: WebGLRenderingContext = js.native
+  // var program: WebGLProgram = js.native
+  // var vertexSrc: js.Array[String] = js.native
+  // def destroy(): Unit = js.native
+  // def init(): Unit = js.native
 }
 
 @JSName("PIXI.Point")
@@ -782,7 +782,7 @@ class Point protected () extends js.Object {
   def this(x: Double = ???, y: Double = ???) = this()
   var x: Double = js.native
   var y: Double = js.native
-  def clone(): Point = js.native
+  override def clone(): Point = js.native
   def set(x: Double, y: Double): Unit = js.native
 }
 
@@ -790,8 +790,8 @@ class Point protected () extends js.Object {
 class Polygon protected () extends HitArea {
   def this(points: js.Array[Point]) = this()
   var points: js.Array[js.Any] = js.native
-  def clone(): Polygon = js.native
-  def contains(x: Double, y: Double): Boolean = js.native
+  override def clone(): Polygon = js.native
+  // def contains(x: Double, y: Double): Boolean = js.native
 }
 
 @JSName("PIXI.Rectangle")
@@ -801,8 +801,8 @@ class Rectangle protected () extends HitArea {
   var y: Double = js.native
   var width: Double = js.native
   var height: Double = js.native
-  def clone(): Rectangle = js.native
-  def contains(x: Double, y: Double): Boolean = js.native
+  override def clone(): Rectangle = js.native
+  // def contains(x: Double, y: Double): Boolean = js.native
 }
 
 @JSName("PIXI.RGBSplitFilter")
@@ -816,7 +816,7 @@ class RGBSplitFilter extends AbstractFilter {
 class Rope protected () extends Strip {
   def this(texture: Texture, points: js.Array[Point]) = this()
   var points: js.Array[Point] = js.native
-  var vertices: js.Array[Double] = js.native
+  // var vertices: js.Array[Double] = js.native
   def refresh(): Unit = js.native
   def setTexture(texture: Texture): Unit = js.native
 }
@@ -829,8 +829,8 @@ class RoundedRectangle protected () extends HitArea {
   var width: Double = js.native
   var height: Double = js.native
   var radius: Double = js.native
-  def clone(): RoundedRectangle = js.native
-  def contains(x: Double, y: Double): Boolean = js.native
+  override def clone(): RoundedRectangle = js.native
+  // def contains(x: Double, y: Double): Boolean = js.native
 }
 
 @JSName("PIXI.SepiaFilter")
@@ -849,14 +849,14 @@ class SpineLoader protected () extends Mixin {
   var url: String = js.native
   var crossorigin: Boolean = js.native
   var loaded: Boolean = js.native
-  def listeners(eventName: String): js.Array[js.Function] = js.native
-  def emit(eventName: String, data: js.Any = ???): Boolean = js.native
-  def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
-  def on(eventName: String, fn: js.Function): js.Function = js.native
-  def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
-  def once(eventName: String, fn: js.Function): js.Function = js.native
-  def off(eventName: String, fn: js.Function): js.Function = js.native
-  def removeAllEventListeners(eventName: String): Unit = js.native
+  // def listeners(eventName: String): js.Array[js.Function] = js.native
+  // def emit(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def on(eventName: String, fn: js.Function): js.Function = js.native
+  // def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
+  // def once(eventName: String, fn: js.Function): js.Function = js.native
+  // def off(eventName: String, fn: js.Function): js.Function = js.native
+  // def removeAllEventListeners(eventName: String): Unit = js.native
   def load(): Unit = js.native
 }
 
@@ -900,14 +900,14 @@ class SpriteSheetLoader protected () extends Mixin {
   var frames: js.Any = js.native
   var texture: Texture = js.native
   var url: String = js.native
-  def listeners(eventName: String): js.Array[js.Function] = js.native
-  def emit(eventName: String, data: js.Any = ???): Boolean = js.native
-  def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
-  def on(eventName: String, fn: js.Function): js.Function = js.native
-  def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
-  def once(eventName: String, fn: js.Function): js.Function = js.native
-  def off(eventName: String, fn: js.Function): js.Function = js.native
-  def removeAllEventListeners(eventName: String): Unit = js.native
+  // def listeners(eventName: String): js.Array[js.Function] = js.native
+  // def emit(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def on(eventName: String, fn: js.Function): js.Function = js.native
+  // def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
+  // def once(eventName: String, fn: js.Function): js.Function = js.native
+  // def off(eventName: String, fn: js.Function): js.Function = js.native
+  // def removeAllEventListeners(eventName: String): Unit = js.native
   def load(): Unit = js.native
 }
 
@@ -931,7 +931,7 @@ class Strip protected () extends DisplayObjectContainer {
   var texture: Texture = js.native
   var uvs: js.Array[Double] = js.native
   var vertices: js.Array[Double] = js.native
-  def getBounds(matrix: Matrix = ???): Rectangle = js.native
+  // def getBounds(matrix: Matrix = ???): Rectangle = js.native
 }
 
 @JSName("PIXI.Strip")
@@ -969,14 +969,14 @@ class Texture protected () extends Mixin {
   var width: Double = js.native
   var scope: js.Any = js.native
   var valid: Boolean = js.native
-  def listeners(eventName: String): js.Array[js.Function] = js.native
-  def emit(eventName: String, data: js.Any = ???): Boolean = js.native
-  def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
-  def on(eventName: String, fn: js.Function): js.Function = js.native
-  def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
-  def once(eventName: String, fn: js.Function): js.Function = js.native
-  def off(eventName: String, fn: js.Function): js.Function = js.native
-  def removeAllEventListeners(eventName: String): Unit = js.native
+  // def listeners(eventName: String): js.Array[js.Function] = js.native
+  // def emit(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def dispatchEvent(eventName: String, data: js.Any = ???): Boolean = js.native
+  // def on(eventName: String, fn: js.Function): js.Function = js.native
+  // def addEventListener(eventName: String, fn: js.Function): js.Function = js.native
+  // def once(eventName: String, fn: js.Function): js.Function = js.native
+  // def off(eventName: String, fn: js.Function): js.Function = js.native
+  // def removeAllEventListeners(eventName: String): Unit = js.native
   def destroy(destroyBase: Boolean): Unit = js.native
   def setFrame(frame: Rectangle): Unit = js.native
 }
@@ -994,15 +994,15 @@ object Texture extends js.Object {
 @JSName("PIXI.TilingSprite")
 class TilingSprite protected () extends Sprite {
   def this(texture: Texture, width: Double, height: Double) = this()
-  var blendMode: Double = js.native
-  var texture: Texture = js.native
-  var tint: Double = js.native
+  // var blendMode: Double = js.native
+  // var texture: Texture = js.native
+  // var tint: Double = js.native
   var tilePosition: Point = js.native
   var tileScale: Point = js.native
   var tileScaleOffset: Point = js.native
   def destroy(): Unit = js.native
   def generateTilingTexture(forcePowerOfTwo: Boolean = ???): Unit = js.native
-  def setTexture(texture: Texture): Unit = js.native
+  // def setTexture(texture: Texture): Unit = js.native
 }
 
 @JSName("PIXI.TiltShiftFilter")
@@ -1041,7 +1041,7 @@ class TwistFilter extends AbstractFilter {
 @JSName("PIXI.VideoTexture")
 class VideoTexture extends BaseTexture {
   var autoUpdate: Boolean = js.native
-  def destroy(): Unit = js.native
+  // def destroy(): Unit = js.native
   def updateBound(): Unit = js.native
   def onPlayStart(): Unit = js.native
   def onPlayStop(): Unit = js.native
@@ -1156,18 +1156,18 @@ class WebGLMaskManager extends js.Object {
 @JSName("PIXI.WebGLRenderer")
 class WebGLRenderer protected () extends PixiRenderer {
   def this(width: Double = ???, height: Double = ???, options: PixiRendererOptions = ???) = this()
-  var autoResize: Boolean = js.native
-  var clearBeforeRender: Boolean = js.native
+  // var autoResize: Boolean = js.native
+  // var clearBeforeRender: Boolean = js.native
   var contextLost: Boolean = js.native
   var contextLostBound: js.Function = js.native
   var contextRestoreLost: Boolean = js.native
   var contextRestoredBound: js.Function = js.native
-  var height: Double = js.native
+  // var height: Double = js.native
   var gl: WebGLRenderingContext = js.native
   var offset: Point = js.native
   var preserveDrawingBuffer: Boolean = js.native
   var projection: Point = js.native
-  var resolution: Double = js.native
+  // var resolution: Double = js.native
   var renderSession: RenderSession = js.native
   var shaderManager: WebGLShaderManager = js.native
   var spriteBatch: WebGLSpriteBatch = js.native
@@ -1175,16 +1175,16 @@ class WebGLRenderer protected () extends PixiRenderer {
   var filterManager: WebGLFilterManager = js.native
   var stencilManager: WebGLStencilManager = js.native
   var blendModeManager: WebGLBlendModeManager = js.native
-  var transparent: Boolean = js.native
-  var `type`: Double = js.native
-  var view: HTMLCanvasElement = js.native
-  var width: Double = js.native
-  def destroy(): Unit = js.native
+  // var transparent: Boolean = js.native
+  // var `type`: Double = js.native
+  // var view: HTMLCanvasElement = js.native
+  // var width: Double = js.native
+  // def destroy(): Unit = js.native
   def initContext(): Unit = js.native
   def mapBlendModes(): Unit = js.native
-  def render(stage: Stage): Unit = js.native
+  // def render(stage: Stage): Unit = js.native
   def renderDisplayObject(displayObject: DisplayObject, projection: Point, buffer: WebGLBuffer): Unit = js.native
-  def resize(width: Double, height: Double): Unit = js.native
+  // def resize(width: Double, height: Double): Unit = js.native
   def updateTexture(texture: Texture): Unit = js.native
 }
 
@@ -1251,11 +1251,11 @@ class WebGLSpriteBatch extends js.Object {
 @JSName("PIXI.RenderTexture")
 class RenderTexture protected () extends Texture {
   def this(width: Double = ???, height: Double = ???, renderer: PixiRenderer = ???, scaleMode: scaleModes = ???, resolution: Double = ???) = this()
-  var frame: Rectangle = js.native
-  var baseTexture: BaseTexture = js.native
+  // var frame: Rectangle = js.native
+  // var baseTexture: BaseTexture = js.native
   var renderer: PixiRenderer = js.native
   var resolution: Double = js.native
-  var valid: Boolean = js.native
+  // var valid: Boolean = js.native
   def clear(): Unit = js.native
   def getBase64(): String = js.native
   def getCanvas(): HTMLCanvasElement = js.native
@@ -1365,62 +1365,62 @@ trait ISpineTimeline extends js.Object {
 @JSName("PIXI.RotateTimeline")
 class RotateTimeline protected () extends ISpineTimeline {
   def this(frameCount: Double) = this()
-  var curves: Curves = js.native
-  var frames: js.Array[Double] = js.native
-  var boneIndex: Double = js.native
-  def getFrameCount(): Double = js.native
+  // var curves: Curves = js.native
+  // var frames: js.Array[Double] = js.native
+  // var boneIndex: Double = js.native
+  // def getFrameCount(): Double = js.native
   def setFrame(frameIndex: Double, time: Double, angle: Double): Unit = js.native
-  @JSName("apply")
-  def apply(skeleton: Skeleton, time: Double, alpha: Double): Unit = js.native
+  // @JSName("apply")
+  // def apply(skeleton: Skeleton, time: Double, alpha: Double): Unit = js.native
 }
 
 @JSName("PIXI.TranslateTimeline")
 class TranslateTimeline protected () extends ISpineTimeline {
   def this(frameCount: Double) = this()
-  var curves: Curves = js.native
-  var frames: js.Array[Double] = js.native
-  var boneIndex: Double = js.native
-  def getFrameCount(): Double = js.native
+  // var curves: Curves = js.native
+  // var frames: js.Array[Double] = js.native
+  // var boneIndex: Double = js.native
+  // def getFrameCount(): Double = js.native
   def setFrame(frameIndex: Double, time: Double, x: Double, y: Double): Unit = js.native
-  @JSName("apply")
-  def apply(skeleton: Skeleton, time: Double, alpha: Double): Unit = js.native
+  // @JSName("apply")
+  // def apply(skeleton: Skeleton, time: Double, alpha: Double): Unit = js.native
 }
 
 @JSName("PIXI.ScaleTimeline")
 class ScaleTimeline protected () extends ISpineTimeline {
   def this(frameCount: Double) = this()
-  var curves: Curves = js.native
-  var frames: js.Array[Double] = js.native
-  var boneIndex: Double = js.native
-  def getFrameCount(): Double = js.native
+  // var curves: Curves = js.native
+  // var frames: js.Array[Double] = js.native
+  // var boneIndex: Double = js.native
+  // def getFrameCount(): Double = js.native
   def setFrame(frameIndex: Double, time: Double, x: Double, y: Double): Unit = js.native
-  @JSName("apply")
-  def apply(skeleton: Skeleton, time: Double, alpha: Double): Unit = js.native
+  // @JSName("apply")
+  // def apply(skeleton: Skeleton, time: Double, alpha: Double): Unit = js.native
 }
 
 @JSName("PIXI.ColorTimeline")
 class ColorTimeline protected () extends ISpineTimeline {
   def this(frameCount: Double) = this()
-  var curves: Curves = js.native
-  var frames: js.Array[Double] = js.native
-  var boneIndex: Double = js.native
-  def getFrameCount(): Double = js.native
+  // var curves: Curves = js.native
+  // var frames: js.Array[Double] = js.native
+  // var boneIndex: Double = js.native
+  // def getFrameCount(): Double = js.native
   def setFrame(frameIndex: Double, time: Double, r: Double, g: Double, b: Double, a: Double): Unit = js.native
-  @JSName("apply")
-  def apply(skeleton: Skeleton, time: Double, alpha: Double): Unit = js.native
+  // @JSName("apply")
+  // def apply(skeleton: Skeleton, time: Double, alpha: Double): Unit = js.native
 }
 
 @JSName("PIXI.AttachmentTimeline")
 class AttachmentTimeline protected () extends ISpineTimeline {
   def this(frameCount: Double) = this()
-  var curves: Curves = js.native
-  var frames: js.Array[Double] = js.native
-  var attachmentNames: js.Array[String] = js.native
-  var slotIndex: Double = js.native
-  def getFrameCount(): Double = js.native
+  // var curves: Curves = js.native
+  // var frames: js.Array[Double] = js.native
+  // var attachmentNames: js.Array[String] = js.native
+  // var slotIndex: Double = js.native
+  // def getFrameCount(): Double = js.native
   def setFrame(frameIndex: Double, time: Double, attachmentName: String): Unit = js.native
-  @JSName("apply")
-  def apply(skeleton: Skeleton, time: Double, alpha: Double): Unit = js.native
+  // @JSName("apply")
+  // def apply(skeleton: Skeleton, time: Double, alpha: Double): Unit = js.native
 }
 
 @JSName("PIXI.SkeletonData")
@@ -1625,42 +1625,36 @@ class Spine protected () extends DisplayObjectContainer {
   def update(dt: Double): Unit = js.native
 }
 
-@JSName("PIXI.PolyK")
-package object PolyK extends js.Object {
-  def Triangulate(p: js.Array[Double]): js.Array[Double] = js.native
-}
+// @JSName("PIXI.PolyK")
+// package object PolyK extends js.Object {
+//   def Triangulate(p: js.Array[Double]): js.Array[Double] = js.native
+// }
 
 }
 
-@JSName("PIXI")
-package object PIXI extends js.Object {
-  var WEBGL_RENDERER: Double = js.native
-  var CANVAS_RENDERER: Double = js.native
-  var VERSION: String = js.native
-  var defaultRenderOptions: PixiRendererOptions = js.native
-  var INTERACTION_REQUENCY: Double = js.native
-  var AUTO_PREVENT_DEFAULT: Boolean = js.native
-  var PI_2: Double = js.native
-  var RAD_TO_DEG: Double = js.native
-  var DEG_TO_RAD: Double = js.native
-  var RETINA_PREFIX: String = js.native
-  var identityMatrix: Matrix = js.native
-  var glContexts: js.Array[WebGLRenderingContext] = js.native
-  var instances: js.Array[js.Any] = js.native
-  def isPowerOfTwo(width: Double, height: Double): Boolean = js.native
-  def rgb2hex(rgb: js.Array[Double]): String = js.native
-  def hex2rgb(hex: String): js.Array[Double] = js.native
-  def autoDetectRenderer(width: Double = ???, height: Double = ???, options: PixiRendererOptions = ???): PixiRenderer = js.native
-  def autoDetectRecommendedRenderer(width: Double = ???, height: Double = ???, options: PixiRendererOptions = ???): PixiRenderer = js.native
-  def canUseNewCanvasBlendModes(): Boolean = js.native
-  def getNextPowerOfTwo(number: Double): Double = js.native
-  def AjaxRequest(): XMLHttpRequest = js.native
-  def CompileFragmentShader(gl: WebGLRenderingContext, shaderSrc: js.Array[String]): js.Dynamic = js.native
-  def CompileProgram(gl: WebGLRenderingContext, vertexSrc: js.Array[String], fragmentSrc: js.Array[String]): js.Dynamic = js.native
-}
-
-}
-
-package object importedjs extends js.GlobalScope {
-  def requestAnimFrame(callback: js.Function): Unit = js.native
-}
+// @JSName("PIXI")
+// package object PIXI extends js.Object {
+//   var WEBGL_RENDERER: Double = js.native
+//   var CANVAS_RENDERER: Double = js.native
+//   var VERSION: String = js.native
+//   var defaultRenderOptions: PixiRendererOptions = js.native
+//   var INTERACTION_REQUENCY: Double = js.native
+//   var AUTO_PREVENT_DEFAULT: Boolean = js.native
+//   var PI_2: Double = js.native
+//   var RAD_TO_DEG: Double = js.native
+//   var DEG_TO_RAD: Double = js.native
+//   var RETINA_PREFIX: String = js.native
+//   var identityMatrix: Matrix = js.native
+//   var glContexts: js.Array[WebGLRenderingContext] = js.native
+//   var instances: js.Array[js.Any] = js.native
+//   def isPowerOfTwo(width: Double, height: Double): Boolean = js.native
+//   def rgb2hex(rgb: js.Array[Double]): String = js.native
+//   def hex2rgb(hex: String): js.Array[Double] = js.native
+//   def autoDetectRenderer(width: Double = ???, height: Double = ???, options: PixiRendererOptions = ???): PixiRenderer = js.native
+//   def autoDetectRecommendedRenderer(width: Double = ???, height: Double = ???, options: PixiRendererOptions = ???): PixiRenderer = js.native
+//   def canUseNewCanvasBlendModes(): Boolean = js.native
+//   def getNextPowerOfTwo(number: Double): Double = js.native
+//   def AjaxRequest(): XMLHttpRequest = js.native
+//   def CompileFragmentShader(gl: WebGLRenderingContext, shaderSrc: js.Array[String]): js.Dynamic = js.native
+//   def CompileProgram(gl: WebGLRenderingContext, vertexSrc: js.Array[String], fragmentSrc: js.Array[String]): js.Dynamic = js.native
+// }
